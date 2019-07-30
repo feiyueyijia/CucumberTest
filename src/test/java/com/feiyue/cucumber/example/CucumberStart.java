@@ -1,4 +1,4 @@
-package com.feiyue.cucumber.service;
+package com.feiyue.cucumber.example;
 
 import org.junit.runner.RunWith;
 
