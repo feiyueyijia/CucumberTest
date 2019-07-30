@@ -26,7 +26,10 @@ import cucumber.api.junit.Cucumber;
   */
 // tags="@CA", 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"json:target/cucumber/cucumber.json", "html:target/cucumber", "pretty"}, features = "src/test/resources/features/")
+@CucumberOptions(tags = "@CalculatorTest",
+        glue = {"com.feiyue"},
+        plugin = {"json:target/cucumber/cucumber.json", "html:target/cucumber", "pretty"},
+        features = "src/test/resources/feature/")
 public class CucumberStart {
 
 }
