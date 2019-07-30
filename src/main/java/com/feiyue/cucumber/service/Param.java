@@ -4,6 +4,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -11,15 +13,18 @@ import org.junit.Assert;
  **/
 public class Param {
 
+    private static Logger logger = LoggerFactory.getLogger(Param.class);
+
     int temp;
+
     @Given("^param打开计算器面板$")
     public void openCalc() {
-        System.out.println("打开计算器进行计算");
+        logger.info("打开计算器进行计算");
     }
 
     @When("^输入 \"([^\"]*)\" and \"([^\"]*)\" 并计算结果$")
     public int addition(int a1, int a2) {
-        temp=a1 + a2;
+        temp = a1 + a2;
         return temp;
     }
 
