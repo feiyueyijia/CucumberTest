@@ -5,7 +5,7 @@
 
     <groupId>com.feiyue</groupId>
     <artifactId>cucumber</artifactId>
-    <version>${project.release.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>CucumberTest</name>
@@ -18,7 +18,6 @@
     </parent>
 
     <properties>
-        <project.release.version>0.0.1-SNAPSHOT</project.release.version>
         <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
         <cucumber.version>1.2.4</cucumber.version>
