@@ -27,7 +27,7 @@ public class Calculator {
 
     @And("^输入 \"([^\"]*)\"$")
     public void input1(String num) {
-        logger.debug("输入" + num);
+        logger.info("输入" + num);
     }
 
     @And("^按下=号")
