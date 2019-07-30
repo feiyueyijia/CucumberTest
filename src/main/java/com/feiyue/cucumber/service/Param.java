@@ -12,7 +12,7 @@ import org.junit.Assert;
 public class Param {
 
     int temp;
-    @Given("^打开计算器面板$")
+    @Given("^param打开计算器面板$")
     public void openCalc() {
         System.out.println("打开计算器进行计算");
     }
@@ -23,8 +23,8 @@ public class Param {
         return temp;
     }
 
-    @Then("^等待计算结果 \"([^\"]*)\"")
-    public void verify_result(int result) {
+    @Then("^param等待计算结果 \"([^\"]*)\"")
+    public void verifyResult(int result) {
         //验证实际计算和预期结果是否一致
         Assert.assertEquals(temp, result);
     }
