@@ -18,7 +18,7 @@
     </parent>
 
     <properties>
-        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
+        <spring-boot.version>2.5.12</spring-boot.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
         <cucumber.version>1.2.4</cucumber.version>
     </properties>
